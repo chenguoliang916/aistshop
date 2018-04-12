@@ -1,0 +1,66 @@
+/* ============================公共=================================== */
+* { margin: 0; padding: 0;}
+body {font-size: 12px;font-family:"微软雅黑","宋体"; }
+ul{list-style-type:none;}
+li{list-style:none;}
+a {text-decoration: none;border: none;}
+a img {border: 0}
+.m-con {width: 1400px;margin: 0 auto;}
+.img-ju {text-align: center;}
+.clear {clear: both;}
+/* ============================头部=================================== */
+.nav-brand { width: 100%; height: 60px; background: url(/statics/aist/pinpai/images/nav_bj.jpg) center no-repeat;padding-top: 20px;}
+.nav-brand .phone {width: 30%;float: left;}
+.nav-brand .logo {width: 40%;float: left;}
+.nav-brand .nav-menu {width: 30%;float: left;}
+.nav-brand .nav-menu ul {position: relative;}
+.nav-brand .nav-menu ul li {width: 33%;float: left;font-size: 14px;line-height: 30px;cursor: pointer;color: #121212;transition: 0.5s}
+.nav-brand .nav-menu ul li:hover {color: #595959}
+.nav-brand .nav-menu ul li:after{width: 1px;height: 10px;border-left: solid 1px #bbbbbb;content:"";margin-left: 30%;}
+.nav-brand .nav-menu ul .WeChat:after {border: none;}
+
+.nav-brand .nav-menu ul .menu span{ width: 30px;height: 30px;background:url(/statics/aist/pinpai/images/nav_ico.png);overflow: hidden;display: block;float: left;margin-right: 10px;}
+.nav-brand .nav-menu ul .search span{ width: 30px;height: 30px;background:url(/statics/aist/pinpai/images/nav_ico.png) -28px 0 ;  overflow: hidden;display: block;float: left;margin-right: 10px;}
+.nav-brand .nav-menu ul .WeChat span{ width: 30px;height: 30px;background:url(/statics/aist/pinpai/images/nav_ico.png) -51px 0;overflow: hidden;display: block;float: left;margin-right: 10px;}
+
+.nav-brand .nav-menu ul .menu:hover {color: #eb4c49}
+.nav-brand .nav-menu ul .menu:hover span {background:url(/statics/aist/pinpai/images/nav_ico.png) 0 -30px;}
+.nav-brand .nav-menu ul .search:hover span {background:url(/statics/aist/pinpai/images/nav_ico.png) -28px -30px;}
+.nav-brand .nav-menu ul .WeChat:hover span {background:url(/statics/aist/pinpai/images/nav_ico.png) -51px -30px;}
+
+/* ============================菜单展开=============================== */
+.menu-down {_background: #ea514e}
+.menu-down {background: #2a2727;width: 100%;height: auto;padding: 100px 0;display: none;transition: 0.5s}
+.menu-down ul {width: 1200px;margin: 0 auto;}
+.menu-down ul li {width: 10%;float: left;margin: 0 1%;text-align: center;}
+.menu-down ul li:nth-child(7){margin: 0;width: 15%}
+.menu-down ul li p {font-size: 22px;color: #fff;font-weight: bold;margin-bottom: 80px;}
+.menu-down ul li a {font-size: 14px;color: #fffefe;display: block;margin-bottom: 25px;}
+.menu-down ul li a:hover {font-weight: bold;}
+
+@-webkit-keyframes open{
+    0%
+    {
+        -webkit-transform:rotateX(-120deg);
+    }   
+    40%
+    {
+        -webkit-transform:rotateX(30deg);
+    }
+    60%
+    {
+        -webkit-transform:rotateX(-20deg);
+    }
+    80%
+    {
+        -webkit-transform:rotateX(10deg);
+    }
+    100%
+    {
+        -webkit-transform:rotateX(0deg);
+    }
+}
+
+.wrap{-webkit-perspective:800px;position: absolute;top: 40px;right: 40px;}
+.wrap img {-webkit-transform:rotateX(90deg);display: none;}
+.wrap .open{-webkit-animation:open 2s;-webkit-transform:rotateX(0deg);display: block;}

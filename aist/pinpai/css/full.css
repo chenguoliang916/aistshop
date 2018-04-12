@@ -1,0 +1,160 @@
+* { margin: 0; padding: 0;}
+body { font: 16px/1.8 "Microsoft Yahei",verdana;}
+ul, ol { list-style-type: none;}
+a {text-decoration: none;}
+/* 头部 */
+.center-wrap { position: relative; z-index: 1; width: 1400px; height: 100%; margin: 0 auto;}
+.clearfix:after { content: ""; display: table; clear: both;}
+
+.ml-nav { position: fixed; top: 0; left: 0; z-index: 10; width: 100%; padding: 15px 0; background-color: rgba(255, 255, 255, 0.85);}
+.ml-logo { float: left; width: 235px; height: 30px; margin: 8px 0; font-size: 0; background-image: url(/statics/aist/pinpai/images/logo.png);}
+.ml-link { float: right; margin: 8px 150px 0 0; font-size: 0;}
+.ml-link a { display: inline-block; margin: 0 15px; font-size: 16px;color: #002f34}
+.ml-link .on {border-bottom: solid 2px #002f34;padding-bottom: 15px }
+.ml-link a:hover  {border-bottom: solid 2px #002f34;padding-bottom: 15px }
+.buy-now { position: absolute; right: 0; top: 0; width: 100px; height: 36px; line-height: 36px; text-align: center; color: #fff; background-color: #3db1fa;}
+.buy-now:hover { color: #fff;}
+
+/* 右侧导航 */
+#fp-nav.right {right: -10px}
+#fp-nav { _display: none; font-size: 12px;}
+#fp-nav ul li { width: 90px; height: 21px; margin: 10px 0 0; vertical-align: middle;}
+#fp-nav li a { float: right; width: 21px; height: 21px; color: #8F9DA4; text-decoration: none; text-align: right; background: url(/statics/aist/pinpai/images/dot.png) 1px 7px no-repeat;transition: all 1s;}
+#fp-nav li .active { background-position: 0 bottom;}
+#fp-nav li a:hover { background-position: 0 bottom;}
+#fp-nav span { display: none;}
+.full-ppPage-tooltip { float: left; top: 0; margin-right: 5px; font: 12px "Microsoft Yahei"; color: #8F9DA4; line-height: 21px;}
+
+.section { position: relative; overflow: hidden;}
+.section .bg { position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.section .bg img { display: block; width: 100%; height: 100%;}
+.set-h img {width: 100%;} 
+/*===========section1=========*/
+.section1  { width: 100%; height: auto; background: url(/statics/aist/pinpai/images/section1.jpg) no-repeat;background-size: 100% 100%; }
+.section1 .bg12 { position: absolute; left:-80%; width: 33%; opacity: 0; transition: all 1s; }
+
+.section1 .bg13 { position: absolute;left: 5%;width: 33%;transition: all 1s;} 
+.section1 .sec1-left{width: 90%;}  
+.section1 .hgroup { position: absolute;   left: 50%; top: 35%;  opacity: 0; -webkit-transform:scale(0.5, 0.5); transform:scale(0.5, 0.5); transition: all 1s;}
+
+.section1 .mouse { position: absolute;right: 33%; bottom: 30%; opacity: 0;transition: all 1s;}  
+
+  
+.active .bg12 { left: 5%; top: 23%;opacity: 1; transition-delay: 0.5s; }
+
+.active .hgroup { opacity: 1; -webkit-transform:scale(1, 1); transform:scale(1, 1); transition-delay: 1.5s;}
+.active .mail { top: 25px; transition-delay: 0.7s;}
+.active .mouse { opacity: 1; transition-duration: 1s; transition-delay: 2s;}
+
+
+/*===========section2=========*/
+.section2 .sn { position: absolute; left: 24%;top:-80%; width: 89px; height: 28px; background: url(/statics/aist/pinpai/images/sn.png) no-repeat; transition: all 1s;  opacity: 0; }
+.section2 .sw {  position: absolute; left: 24%;top:-80%; width: 89px; height: 28px; background: url(/statics/aist/pinpai/images/sw.png) no-repeat; transition: all 1s;  opacity: 0;}
+.section2 .ditu { position: absolute; bottom: 5%; width: 100%; height: 537px;  background: url(/statics/aist/pinpai/images/ditu.png) 50% 0  no-repeat; opacity: 0; -webkit-transform:scale(0.5, 0.5); transform:scale(0.5, 0.5); transition: all 1s;}
+.section2 .sn-shi { position: absolute; top: -24%; width: 100%; height: 537px;  background: url(/statics/aist/pinpai/images/hn.png) 50% 0 no-repeat; opacity: 0;  transition: all 2s;z-index: 999;}
+.section2 .sw-shi { position: absolute; top: -24%; width: 100%; height: 537px;  background: url(/statics/aist/pinpai/images/fhn.png) 50% 0 no-repeat; opacity: 0;  transition: all 2s;z-index: 999;}
+.section2 .bt2 { position: absolute; top:16%;width: 100%;height: 72px;transition: all 1s;background: url(/statics/aist/pinpai/images/bt2.png) -90% 0 no-repeat;}
+.section2 .mouse { position: absolute;left: 52%; bottom: 6%; width:26px; height: 50px; background: url(/statics/aist/pinpai/images/shu.png) no-repeat; transition: all 1s;opacity: 0; }
+.active .mouse { opacity: 1; transition-duration: 1s; transition-delay: 2s;}
+
+
+.active .sn { opacity: 1; top: 34%; transition-delay: 2.2s;}
+.active .sw { opacity: 1; top: 38%; transition-delay: 1.6s;}
+.active .sn-shi { opacity: 1; top: 35%;bottom: 5%; transition-delay: 2.2s;}
+.active .sw-shi { opacity: 1; top: 35%; bottom: 5%;transition-delay: 1.6s;}
+
+.active .ditu { opacity: 1; -webkit-transform:scale(1, 1); transform:scale(1, 1); transition-delay: 0.7s;}
+
+.active .bg22 { margin-left: -280px; opacity: 1; transition-delay: 0.7s;}
+.active .bt2 { top:16%;background-position:50% 0;transition-delay: 1s;}
+
+/*===========section3=========*/
+.section3 { width: 100%; height: auto; background: url(/statics/aist/pinpai/images/section3.jpg) no-repeat;background-size: 100% 100%; }
+.section3 .m-con{width: 100%; position: relative;}
+.section3 .sec3-left {width: 60%;height: 100%; position: absolute;left: 0;}
+.section3 .sec3-right {width: 40%; height: 100%;position: absolute;left: 60%;}
+
+.section3 .xueshu { position: absolute; left:-800px;bottom: 16%;  opacity: 0; transition: all 1s;width: 90%; }
+}
+.section3 img {width: 100%}
+.section3 .bt3 { position: absolute; width: 80%; height: 100%;  top: 42%; opacity: 0; -webkit-transform:scale(0.5, 0.5); transform:scale(0.5, 0.5); transition: all 1s;}
+.section3 .duo a {background: #00bdd1;display: block;width: 110px;height: 25px;color: #fff;font-size: 14px;line-height: 26px;border-radius: 25px;text-align: center;position: absolute;right: 50%;top: 50%;opacity: 0;transition: all 1.5s; }
+
+.active .xueshu { left: 5%; opacity: 1; transition-delay: 0.5s; }
+.active .xue-left {left:6%; opacity: 1; transition-delay: 0.8s; }
+.active .bt3 { opacity: 1; -webkit-transform:scale(1, 1); transform:scale(1, 1); transition-delay: 0.5s;}
+.active .duo a {opacity: 1;display: block;transition-delay: 1.7s;}
+
+/*===========section4=========*/
+.section4 { width: 100%; height: auto; background: url(/statics/aist/pinpai/images/section4.jpg) no-repeat;background-size: 100% 100%; }
+
+.section4 .bt4 { position: absolute; left: 30%;  top: 16%; opacity: 0; -webkit-transform:scale(0.5, 0.5); transform:scale(0.5, 0.5); transition: all 1s;}
+
+.section4 .duo a {background: #00bdd1;display: block;width: 110px;height: 25px;color: #fff;font-size: 14px;line-height: 26px;border-radius: 25px;text-align: center;position: absolute;right: 49%;top: 25%;opacity: 0;transition: all 1.5s;z-index: 100; }
+.section4 .dbtuan {width: 90%;height: 100%;position: relative;}
+.section4 .dbtuan ul {position: absolute;bottom: 5%;left: 5%;right: 0%;height: 100%}
+.section4 .dbtuan ul li {position: absolute; bottom: 5%;right: 0;transition: all 2s ease-out;opacity: 0;}
+.section4 .dbtuan ul li img {width: 100%}
+.active .bt4 { opacity: 1; -webkit-transform:scale(1, 1); transform:scale(1, 1); transition-delay: 0.5s;}
+.active .duo a {opacity: 1;display: block;transition-delay: 0.8s;}
+.active .dbtuan ul li:nth-child(1) {opacity: 1;transition-delay: 1s;}
+.active .dbtuan ul li:nth-child(2) {opacity: 1;transition-delay: 1.4s;}
+.active .dbtuan ul li:nth-child(3) {opacity: 1;transition-delay: 1.8s;}
+.active .dbtuan ul li:nth-child(4) {opacity: 1;transition-delay: 2.2s;}
+.active .dbtuan ul li:nth-child(5) {opacity: 1;transition-delay: 2.6s;}
+.active .dbtuan ul li:nth-child(6) {opacity: 1;transition-delay: 3s;}
+
+/*===========section5=========*/
+.section5 { width: 100%; height: auto; background: url(/statics/aist/pinpai/images/section5.jpg) no-repeat;background-size: 100% 100%; }
+.section5 .bt5 { position: absolute; left: 35%; width: 30%; top: 12%; opacity: 0; -webkit-transform:scale(0.5, 0.5); transform:scale(0.5, 0.5); transition: all 1s;}
+.section5 .bt5 img {width: 100%}
+.section5 .duo a {background: #00bdd1;display: block;width: 110px;height: 25px;color: #fff;font-size: 14px;line-height: 26px;border-radius: 25px;text-align: center;position: absolute;right: 49%;top: 22%;opacity: 0;transition: all 1.5s;z-index: 100; }
+.section5 .gongyi {height: 100%;position: relative;}
+.section5 .gongyi ul {position: absolute;bottom: 5%;left: 5%;right: 0%;height: 100%}
+.section5 .gongyi ul li {position: absolute; width:29.5%;}
+.section5 .gongyi ul .yi {bottom: 18%;left: 0; }
+.section5 .gongyi ul .er {bottom: 23%;left: 31.5%;}
+.section5 .gongyi ul .san {bottom: 18%;left: 63%;}
+.section5 .gongyi ul li img {width: 100%}
+.section5 .mouse { position: absolute;left: 50%; bottom: 15%; width:26px; height: 50px; background: url(/statics/aist/pinpai/images/shu.png) 50% 0 no-repeat; transition: all 1s;opacity: 1; }
+
+.active .mouse { opacity: 1; transition-duration: 1s; transition-delay: 2s;}
+
+
+.active .bt5 { opacity: 1; -webkit-transform:scale(1, 1); transform:scale(1, 1); transition-delay: 0.5s;}
+.active .duo a {opacity: 1;display: block;transition-delay: 0.8s;}
+
+
+.active .fadeInUp {
+    -webkit-animation: fadeInUp 3s 1;
+    animation: fadeInUp 3s 1;
+}
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0.4;
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+
+/*===========底部=========*/
+.footer .hezuo {width: 1400px;margin: 0 auto;padding: 30px 0;}
+.footer .hezuo ul {height: 80px;}
+.footer .hezuo ul li {float: left;padding: 0 10px;}
+.footer .footer-lian {background-color: #001c1f;padding: 45px 0 70px 0;height: 170px;}
+.footer .footer-xm {width: 1400px;margin: 0 auto;}
+.footer .footer-xm .suo {width: 480px;margin-right: 40px;float: left;}
+.footer .fbt {font-size: 20px;color: #f2f2f2;margin-bottom: 30px;}
+.footer .ftlb {margin-bottom: 8px;line-height: 20px}
+.footer .ftlb a {font-size: 14px;color: #046f7a;margin-right: 10px;}
+.footer .footer-xm .smxm {width: 360px;float: left;margin-right: 50px;}
+.footer .footer-xm .ppjs {width: 140px;float: left;margin-right: 50px;}
+.footer .footer-xm .ppwx {width: 200px;float: left;}
+.footer .center-quan {text-align: center;font-size: 14px;color: #046f7a;padding: 20px 0;}
